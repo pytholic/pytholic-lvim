@@ -1,0 +1,7 @@
+reload("user.options")
+reload("user.keymaps")
+reload("user.telescope")
+reload("user.trouble")
+reload("user.harpoon")
+reload("user.coderunner")
+reload("user.dap")

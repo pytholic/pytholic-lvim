@@ -33,3 +33,8 @@ vim.cmd([[
 
 -- clang formatter style set --
 vim.cmd([[autocmd FileType cpp,c,h setlocal formatprg=clang-format\ --style=Google]])
+
+-- vim.cmd([[highlight CursorLineNr guifg=#CD7F32]])
+vim.cmd([[highlight CursorLineNr guifg=#C68642]])
+-- vim.cmd("highlight LineNr guifg=#003366")
+-- vim.cmd("highlight Comment guifg=#999999")

@@ -3,6 +3,8 @@ reload("user.config")
 -- Disable virtual text diagnostics
 vim.diagnostic.config({ virtual_text = false })
 
+vim.cmd("autocmd Filetype * setlocal formatoptions-=ro")
+
 local formatters = require("lvim.lsp.null-ls.formatters")
 formatters.setup({
 	{ name = "black" },

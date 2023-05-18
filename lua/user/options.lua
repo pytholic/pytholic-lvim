@@ -38,12 +38,3 @@ vim.cmd([[autocmd FileType cpp,c,h setlocal formatprg=clang-format\ --style=Goog
 vim.cmd([[highlight CursorLineNr guifg=#C68642]])
 -- vim.cmd("highlight LineNr guifg=#003366")
 -- vim.cmd("highlight Comment guifg=#999999")
-
-lvim.builtin.which_key.setup({
-	layout_config = {
-		center = {
-			preview_cutoff = 120,
-			max_width = 80, -- Adjust the value to your desired maximum width
-		},
-	},
-})

@@ -20,11 +20,12 @@ formatters.setup({
 
 local linters = require("lvim.lsp.null-ls.linters")
 linters.setup({
-	{ name = "flake8" },
+	{ name = "flake8", filetypes = { "python" } },
 	{
 		name = "shellcheck",
 		args = { "--severity", "warning" },
 	},
+	{ name = "cpplint", filetypes = { "cpp" } },
 })
 
 -- Additional plugins
@@ -35,4 +36,6 @@ lvim.plugins = {
 	{ "mg979/vim-visual-multi", branch = "master" },
 	{ "mfussenegger/nvim-dap" },
 	{ "mfussenegger/nvim-dap-python" },
+	{ "AckslD/swenv.nvim" },
+	{ "stevearc/dressing.nvim" },
 }

@@ -1,9 +1,9 @@
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 
 vim.opt.smartindent = true
@@ -34,7 +34,8 @@ vim.cmd([[
 -- clang formatter style set --
 vim.cmd([[autocmd FileType cpp,c,h setlocal formatprg=clang-format\ --style=Google]])
 
--- vim.cmd([[highlight CursorLineNr guifg=#CD7F32]])
-vim.cmd([[highlight CursorLineNr guifg=#C68642]])
--- vim.cmd("highlight LineNr guifg=#003366")
--- vim.cmd("highlight Comment guifg=#999999")
+-- Disable virtual text diagnostics
+vim.diagnostic.config({ virtual_text = false })
+
+-- Next line comment continues
+vim.cmd("autocmd Filetype * setlocal formatoptions-=ro")

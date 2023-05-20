@@ -50,6 +50,7 @@ lvim.autocommands = {
 
 				hl(0, "NormalFloat", { bg = "#1C1F24" })
 				hl(0, "FloatBorder", { fg = "#87CEEB", bg = "#16161e" })
+				hl(0, "WhichKeyFloat", { bg = "#16161e" })
 			end,
 		},
 	},

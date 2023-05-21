@@ -67,6 +67,28 @@ local colors = {
 	border = "#87CEEB",
 }
 
+local nord = {
+	--16 colors
+	black = "#2E3440", -- nord0 in palette
+	dark_gray = "#3B4252", -- nord1 in palette
+	gray = "#434C5E", -- nord2 in palette
+	light_gray = "#4C566A", -- nord3 in palette
+	light_gray_bright = "#616E88", -- out of palette
+	darkest_white = "#D8DEE9", -- nord4 in palette
+	darker_white = "#E5E9F0", -- nord5 in palette
+	white = "#ECEFF4", -- nord6 in palette
+	teal = "#8FBCBB", -- nord7 in palette
+	off_blue = "#88C0D0", -- nord8 in palette
+	glacier = "#81A1C1", -- nord9 in palette
+	blue = "#5E81AC", -- nord10 in palette
+	red = "#BF616A", -- nord11 in palette
+	orange = "#D08770", -- nord12 in palette
+	yellow = "#EBCB8B", -- nord13 in palette
+	green = "#A3BE8C", -- nord14 in palette
+	purple = "#B48EAD", -- nord15 in palette
+	none = "NONE",
+}
+
 lvim.autocommands = {
 	{
 		{ "ColorScheme" },
@@ -77,11 +99,11 @@ lvim.autocommands = {
 				local hl = vim.api.nvim_set_hl
 
 				-- Telscope
-				hl(0, "TelescopeSelection", { link = "Visual" })
-				hl(0, "TelescopeSelectionCaret", { fg = colors.red, bg = colors.bg_visual })
+				-- hl(0, "TelescopeSelection", { link = "Visual" })
+				-- hl(0, "TelescopeSelectionCaret", { fg = colors.red, bg = colors.bg_visual })
 				-- hl(0, "TelescopeMatching", { fg = colors.teal, bg = "NONE", bold = true, italic = true })
 				hl(0, "TelescopeBorder", { fg = colors.border })
-				hl(0, "TelescopeNormal", { fg = colors.fg, bg = colors.bg_dark })
+				-- hl(0, "TelescopeNormal", { fg = colors.fg, bg = colors.bg_dark })
 				hl(0, "TelescopePromptTitle", { fg = colors.orange, bg = "NONE" })
 				hl(0, "TelescopePromptNormal", { bg = "NONE" })
 				hl(0, "TelescopePromptPrefix", { fg = colors.magenta, bg = "NONE" })
@@ -91,9 +113,9 @@ lvim.autocommands = {
 				hl(0, "TelescopePreviewHyphen", { fg = colors.red, bg = "NONE" })
 
 				-- Rest
-				hl(0, "NormalFloat", { bg = "#1C1F24" })
-				hl(0, "FloatBorder", { fg = "#87CEEB", bg = "#16161e" })
-				hl(0, "WhichKeyFloat", { bg = "#16161e" })
+				-- hl(0, "NormalFloat", { bg = "#1C1F24" })
+				hl(0, "FloatBorder", { fg = nord.darkest_white, bg = nord.none })
+				hl(0, "WhichKeyFloat", { fg = nord.darkest_white, bg = nord.none })
 			end,
 		},
 	},

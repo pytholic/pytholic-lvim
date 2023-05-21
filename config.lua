@@ -3,10 +3,11 @@ reload("user.config")
 lvim.builtin.lualine.style = "lvim"
 
 -- -- Colorscheme
-lvim.colorscheme = "rose-pine"
-require("rose-pine").setup({
-	variant = "moon",
-})
+lvim.colorscheme = "nord"
+-- lvim.colorscheme = "rose-pine"
+-- require("rose-pine").setup({
+-- 	variant = "moon",
+-- })
 
 local formatters = require("lvim.lsp.null-ls.formatters")
 formatters.setup({
@@ -70,4 +71,5 @@ lvim.plugins = {
 	{ "AckslD/swenv.nvim" },
 	{ "stevearc/dressing.nvim" },
 	{ "rose-pine/neovim" },
+	{ "shaunsingh/nord.nvim" },
 }

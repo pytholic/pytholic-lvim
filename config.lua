@@ -71,5 +71,5 @@ lvim.plugins = {
 	{ "AckslD/swenv.nvim" },
 	{ "stevearc/dressing.nvim" },
 	{ "rose-pine/neovim" },
-	{ "shaunsingh/nord.nvim" },
+	{ "nordtheme/vim" },
 }

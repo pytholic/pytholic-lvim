@@ -18,6 +18,7 @@ local nord = {
 	green = "#a3be8c", -- nord14 in palette
 	purple = "#b48ead", -- nord15 in palette
 	none = "none",
+	light_orange = "#F89880",
 }
 
 lvim.autocommands = {
@@ -32,7 +33,7 @@ lvim.autocommands = {
 				-- Telscope
 				-- hl(0, "TelescopeSelection", { link = "Visual" })
 				-- hl(0, "TelescopeSelectionCaret", { fg = colors.red, bg = colors.bg_visual })
-				-- hl(0, "TelescopeMatching", { fg = colors.teal, bg = "NONE", bold = true, italic = true })
+				hl(0, "TelescopeMatching", { fg = nord.light_orange, bg = nord.none, bold = true, italic = true })
 				-- hl(0, "TelescopeBorder", { fg = colors.border })
 				-- hl(0, "TelescopeNormal", { fg = colors.fg, bg = colors.bg_dark })
 				-- hl(0, "TelescopePromptTitle", { fg = colors.orange, bg = "NONE" })
@@ -40,7 +41,7 @@ lvim.autocommands = {
 				-- hl(0, "TelescopePromptPrefix", { fg = colors.magenta, bg = "NONE" })
 				-- hl(0, "TelescopeResultsTitle", { fg = colors.orange, bg = "NONE" })
 				-- hl(0, "TelescopePreviewTitle", { fg = colors.orange, bg = "NONE" })
-				-- hl(0, "TelescopePromptCounter", { fg = colors.red, bg = "NONE" })
+				hl(0, "TelescopePromptCounter", { fg = nord.light_orange })
 				-- hl(0, "TelescopePreviewHyphen", { fg = colors.red, bg = "NONE" })
 
 				-- Rest

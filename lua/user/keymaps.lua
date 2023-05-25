@@ -62,7 +62,8 @@ lvim.builtin.which_key.mappings["c"] = {}
 -- Keymap for running 'cmake -S . -B build'
 lvim.keys.normal_mode["<leader>cm"] = ":!cmake -S . -B build<CR>"
 -- Keymap for running 'make -C build'
-lvim.keys.normal_mode["<leader>mk"] = ":!make -C build<CR>"
+-- lvim.keys.normal_mode["<leader>mk"] = ":!make -C build<CR>"
+lvim.keys.normal_mode["<leader>mk"] = ":!cmake --build ./build<CR>"
 
 -- Buffer close --
 lvim.keys.normal_mode["<c-q>"] = { ":BufferKill<CR>", { silent = false } }

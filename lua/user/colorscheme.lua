@@ -49,6 +49,11 @@ lvim.autocommands = {
 				hl(0, "FloatBorder", { fg = nord.darkest_white, bg = nord.none })
 				hl(0, "WhichKeyFloat", { fg = nord.darkest_white, bg = nord.none })
 				hl(0, "NormalFloat", { fg = nord.darkest_white, bg = nord.none })
+
+				-- Highlight occurences vim-illuminate
+				hl(0, "IlluminatedWordText", { link = "Visual" })
+				hl(0, "IlluminatedWordRead", { link = "Visual" })
+				hl(0, "IlluminatedWordWrite", { link = "Visual" })
 			end,
 		},
 	},

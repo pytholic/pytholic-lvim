@@ -1,7 +1,7 @@
 reload("user.config")
 
 lvim.builtin.lualine.style = "lvim"
-
+lvim.builtin.nvimtree.auto_refresh = true
 -- -- Colorscheme
 lvim.colorscheme = "nord"
 -- lvim.colorscheme = "rose-pine"

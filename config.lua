@@ -1,7 +1,9 @@
 reload("user.config")
 
 lvim.builtin.lualine.style = "lvim"
-lvim.builtin.nvimtree.auto_refresh = true
+
+lvim.builtin.nvimtree.active = false -- NOTE: using neo-tree
+
 -- -- Colorscheme
 lvim.colorscheme = "nord"
 -- lvim.colorscheme = "rose-pine"
@@ -76,4 +78,13 @@ lvim.plugins = {
 	{ "rose-pine/neovim" },
 	{ "nordtheme/vim" },
 	{ "folke/todo-comments.nvim" },
+	{
+		"nvim-neo-tree/neo-tree.nvim",
+		branch = "v2.x",
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+			"nvim-tree/nvim-web-devicons",
+			"MunifTanjim/nui.nvim",
+		},
+	},
 }

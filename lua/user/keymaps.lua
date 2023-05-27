@@ -67,3 +67,7 @@ lvim.keys.normal_mode["<leader>mk"] = ":!cmake --build ./build<CR>"
 
 -- Buffer close --
 lvim.keys.normal_mode["<c-q>"] = { ":BufferKill<CR>", { silent = false } }
+
+-- Neotree --
+lvim.builtin.which_key.mappings["e"] = {}
+lvim.keys.normal_mode["<leader>e"] = ":NeoTreeRevealToggle<CR>"

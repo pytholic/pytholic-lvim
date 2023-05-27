@@ -13,7 +13,10 @@ local formatters = require("lvim.lsp.null-ls.formatters")
 formatters.setup({
 	{ name = "black" },
 	{ name = "stylua" },
-	{ name = "clang_format" },
+	{
+		name = "clang_format",
+		args = { "--style=chromium" },
+	},
 	{
 		name = "prettier",
 		---@usage arguments to pass to the formatter

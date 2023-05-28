@@ -16,7 +16,7 @@ require("code_runner").setup({
 		},
 		cpp = {
 			"cd $dir &&",
-			"clang++ -Weverything $file -o $fileNameWithoutExt &&",
+			"clang++ -std=c++20 -Wno-c++98-compat -Weverything $file -o $fileNameWithoutExt &&",
 			"$dir/$fileNameWithoutExt",
 		},
 	},

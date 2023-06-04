@@ -18,7 +18,7 @@ local nord = {
 	green = "#a3be8c", -- nord14 in palette
 	purple = "#b48ead", -- nord15 in palette
 	none = "none",
-	light_orange = "#F89880",
+	light_orange = "#f89880",
 }
 
 lvim.autocommands = {
@@ -46,7 +46,7 @@ lvim.autocommands = {
 
 				-- Rest
 				-- hl(0, "NormalFloat", { bg = "#1C1F24" })
-				hl(0, "FloatBorder", { fg = nord.darkest_white, bg = nord.none })
+				hl(0, "FloatBorder", { fg = nord.darkest_white })
 				hl(0, "WhichKeyFloat", { fg = nord.darkest_white, bg = nord.none })
 				hl(0, "NormalFloat", { fg = nord.darkest_white, bg = nord.none })
 

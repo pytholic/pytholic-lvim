@@ -15,7 +15,6 @@ lvim.builtin.telescope = {
 		layout_config = {
 			height = 0.8, -- adjust the height of the results window
 			width = 0.8, -- adjust the width of the results window
-
 			-- Adjust the following options as needed:
 			preview_cutoff = 120, -- Maximum number of characters to display in the preview column
 			-- results_width = 0.6,

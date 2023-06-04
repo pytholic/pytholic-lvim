@@ -1,6 +1,5 @@
 reload("user.config")
 
-lvim.builtin.lualine.style = "lvim"
 vim.g.neotree_auto_cd = 0
 
 -- put this somewhere in init.lua

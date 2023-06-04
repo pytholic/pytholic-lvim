@@ -51,9 +51,11 @@ lvim.autocommands = {
 				hl(0, "NormalFloat", { fg = nord.darkest_white, bg = nord.none })
 
 				-- Highlight occurences vim-illuminate
-				hl(0, "IlluminatedWordText", { link = "Visual" })
-				hl(0, "IlluminatedWordRead", { link = "Visual" })
-				hl(0, "IlluminatedWordWrite", { link = "Visual" })
+				hl(0, "IlluminatedWordText", { fg = nord.white, bg = nord.light_gray })
+				hl(0, "IlluminatedWordRead", { fg = nord.white, bg = nord.light_gray })
+				hl(0, "IlluminatedWordWrite", { fg = nord.white, bg = nord.light_gray })
+
+				hl(0, "Visual", { fg = nord.white, bg = nord.blue })
 			end,
 		},
 	},

@@ -1,6 +1,8 @@
 reload("user.config")
 
 lvim.builtin.lualine.style = "lvim"
+vim.g.neotree_auto_cd = 0
+
 -- put this somewhere in init.lua
 
 vim.g.loaded_netrw = 1
@@ -91,5 +93,12 @@ lvim.plugins = {
 			"nvim-tree/nvim-web-devicons",
 			"MunifTanjim/nui.nvim",
 		},
+	},
+	{
+		"s1n7ax/nvim-window-picker",
+		version = "v1.*",
+		config = function()
+			require("window-picker").setup()
+		end,
 	},
 }

@@ -35,7 +35,7 @@ vim.cmd([[
 vim.cmd([[autocmd FileType cpp,c,h setlocal formatprg=clang-format\ --style=Google]])
 
 -- Disable virtual text diagnostics
-vim.diagnostic.config({ virtual_text = false })
+vim.diagnostic.config({ virtual_text = false, signcolumn = true })
 
 -- Next line comment continues
 vim.cmd("autocmd Filetype * setlocal formatoptions-=ro")
